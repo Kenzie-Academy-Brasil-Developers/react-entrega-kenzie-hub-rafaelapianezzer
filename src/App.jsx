@@ -1,17 +1,14 @@
-import "../src/index.scss"
-import { RoutesMain } from "../src/routes/RoutesMain";
-
-
-
+import "../src/index.scss" 
+import MyProvider from "./components/Provider/MyProvider";
+import { RoutesMain } from "./routes/RoutesMain";
 
 function App() {
-  
-
   return (
-    <div className="App">
-
-      <RoutesMain />
-    </div>
+    <MyProvider>
+        <div className="App">
+          <RoutesMain />
+        </div>
+    </MyProvider>
   
   )
 }

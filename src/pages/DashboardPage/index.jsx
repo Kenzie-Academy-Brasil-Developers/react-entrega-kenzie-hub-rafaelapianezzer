@@ -2,11 +2,11 @@ import { Header } from "../../components/Header";
 import { Dashboard } from "../../components/Dashboard";
 
 
-export const DashboardPage = ({user, setUser}) => {
+export const DashboardPage = () => {
     return (
         <main>
-             <Header mostrarSair={true}  setUser={setUser}/>
-             <Dashboard user={user} />
+             <Header mostrarSair={true} />
+             <Dashboard  />
         </main>
     )
 }
