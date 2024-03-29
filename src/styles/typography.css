@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+body{
+    font-family: "Inter", sans-serif;
+}
+    
+.title1{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.title2{
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.headline{
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+.headlineBold{
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.paragraph{
+    font-size: 16px;
+    font-weight: normal;
+}
