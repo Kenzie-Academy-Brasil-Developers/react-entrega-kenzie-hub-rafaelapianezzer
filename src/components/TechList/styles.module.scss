@@ -1,0 +1,102 @@
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    
+    .modalContent {
+      background-color: #424246;
+      padding: 20px;
+      width: 90%; // largura do conteúdo do modal
+      max-width: 793px; // largura máxima do modal
+      border-radius: 8px;
+      position: relative;
+      color: black;
+
+      .headerModal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 1rem;
+        border-radius: 3px;
+
+        span{
+            background-color: black;
+            padding: 0.3rem;
+        }
+      }
+      
+      h2 {
+        margin-top: 0;
+      }
+      
+      .closeButton {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #888;
+      }
+      
+      form {
+        margin-top: 20px;
+        
+        div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+          
+          p {
+            margin: 0;
+          }
+          
+          button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: #888;
+            
+            &:hover {
+              color: #555;
+            }
+          }
+        }
+        
+        select {
+          width: 100%;
+          padding: 10px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+        
+        button {
+          background-color: #36383b;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 4px;
+          cursor: pointer;
+          
+          &:hover {
+            background-color: #3b3e41;
+          }
+        }
+      }
+    }
+  }
+  

@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { TechCard } from "../TechCard";
 import MyContext from "../../MyContext";
 import { createTechApi } from "../../services/api";
+import styles from "./styles.module.scss";
 
 export const TechList = () => {
   const { techs, setTechs } = useContext(MyContext);
@@ -30,12 +31,17 @@ export const TechList = () => {
       
    
       {isOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close-button" onClick={toggleModal}>
+        <div className={styles.modal}>
+           <div className={styles.modalContent}>
+          <div className={styles.headerModal}>
+          <h3>Tecnologias</h3>
+            <span className={styles.cloreButton} onClick={toggleModal}>
               &times;
             </span>
-            <h2>Adicionar Tecnologia</h2>
+          </div>
+         
+
+           
             <form>
                 <div>
                     <p>Cadastrar Tecnologia</p>
