@@ -22,12 +22,7 @@ export const TechCard = ({ tech }) => {
         setTechs(updatedTechs);
     }
 
-// const onSubmit = async (data) => {
-    //     const response = await updateTechApi(tech.id, data);
-    //     if (response)
-    //          {const updatedTechs = updateTechById(techs, response);
-    //    setTechs(updatedTechs)}
-    // };
+
 
     const removeTechById = (techs, techIdToRemove) => {
         return techs.filter((tech) => tech.id !== techIdToRemove);
